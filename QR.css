@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.qr-container h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.qr-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.qr-input,
+.qr-select,
+.qr-color {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.qr-input {
+  width: 60%;
+}
+
+.qr-select,
+.qr-color {
+  width: 18%;
+  cursor: pointer;
+}
+
+.qr-button {
+  padding: 10px 20px;
+  background-color: #00c9a7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.qr-button:hover {
+  background-color: #00b494;
+}
+
+.qr-image {
+  margin-top: 20px;
+}
+
+.qr-image img {
+  border-radius: 12px;
+  border: 4px solid #fff;
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.qr-image img:hover {
+  transform: scale(1.05);
+}
+
+.download-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff7675;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #d63031;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
